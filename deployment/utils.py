@@ -1,6 +1,5 @@
 import pandas as pd 
 from pandas import json_normalize
-import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
 from dotenv import dotenv_values
