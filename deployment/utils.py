@@ -15,9 +15,6 @@ from sklearn.preprocessing import StandardScaler, OneHotEncoder, LabelEncoder
 from keras.models import load_model
 from keras.utils import to_categorical
 
-secrets = dotenv_values('.env')
-# Define the API key variable to hold the access key for the Footystats API
-api_key = secrets['API_KEY']
 
 def get_league_matches(api_key, season_id):
     """
