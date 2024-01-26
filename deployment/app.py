@@ -1,7 +1,7 @@
 import streamlit as st
 from utils import aggregate_api_scraped_data, model_prediction
 from dotenv import dotenv_values
-from datetime import datetime
+
 
 # Initialize session state
 if 'last_date' not in st.session_state:
