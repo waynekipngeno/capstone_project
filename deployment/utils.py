@@ -330,8 +330,12 @@ def model_prediction(aggregated_data, match_date, model_features_targets):
 
             return X_scaled, y_encoded_categorical
         def make_predictions(date_matches, model_features_targets):
+            import os
+
+            current_dir = os.path.dirname(os.path.abspath(__file__))
+            model_path = os.path.join(current_dir, "deployment_models", "base_model")
             X_encoded, y_encoded_categorical = data_preprocessing(date_matches, model_features_targets)
-            model = load_model('./capston_project/deployment_models/base_model/')
+            model = load_model(model_path)
             predictions = model.predict(X_encoded)
 
             return predictions
