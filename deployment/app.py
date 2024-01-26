@@ -13,7 +13,7 @@ def aggregate_data(api_key):
     return aggregate_api_scraped_data(api_key=api_key)
 
 
-api_key = st.secrets['api_key']
+api_key = st.secrets['API_KEY']
 
 st.markdown("""
 <style>
