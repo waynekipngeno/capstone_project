@@ -331,7 +331,7 @@ def model_prediction(aggregated_data, match_date, model_features_targets):
             return X_scaled, y_encoded_categorical
         def make_predictions(date_matches, model_features_targets):
             X_encoded, y_encoded_categorical = data_preprocessing(date_matches, model_features_targets)
-            model = load_model('./deployment_models/base_model/')
+            model = load_model('/capston_project/deployment_models/base_model/')
             predictions = model.predict(X_encoded)
 
             return predictions
