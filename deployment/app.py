@@ -13,8 +13,7 @@ def aggregate_data(api_key):
     return aggregate_api_scraped_data(api_key=api_key)
 
 
-secrets = dotenv_values('.env')
-api_key = secrets['API_KEY']
+api_key = st.secrets['api_key']
 
 st.markdown("""
 <style>
