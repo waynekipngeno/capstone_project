@@ -1,5 +1,6 @@
-# NABII DIMBA FOOTBALL PREDICTIONS PROJECT.
-## AUTHORS
+# NABII - DIMBA FOOTBALL PREDICTIONS PROJECT.
+
+### AUTHORS
 1.Wayne Korir
 
 2.Rose Kyalo
@@ -40,6 +41,9 @@ Utilizing the Recursive Feature Elimination (RFE) technique, we systematically i
 ## Methodology
 
 ### EDA
+In 46% of the matches, the home team emerged victorious, while the away team secured victory in 30%, and approximately 24% resulted in draws. Notably, during the 2020/2021 and 2021/2022 seasons, there was a noticeable decline in the home team's winning rate, coinciding with the global pandemic.
+
+This decrease in home team success coincided with the absence of fans from matches, emphasizing the potential influence of fan presence on match outcomes. The observed correlation suggests that the dynamic interaction between fans and players may play a significant role in determining the success of the home team. The absence of this factor during the pandemic period might have contributed to the shift in match outcomes.
 
 
 ### Data Preprocessing
@@ -67,29 +71,49 @@ For predicting total goal count, we utilized regression models. Various models w
 ![Alt Text](/capstone_project/images/totalgoalcount/models)
 
 #### Fouls
+The Support Vector Machine (SVM) achieved a Root Mean Squared Error (RMSE) of 1.97, while the Artificial Neural Network (ANN) exhibited an RMSE of 1.95. These promising results suggest the potential effectiveness of both models, but additional tuning could enhance their predictive accuracy even further.
 
 #### Match Outcomes
+The base models using Stochastic Gradient Descent (SGD) and Long Short-Term Memory (LSTM) demonstrated significant promise, achieving a commendable accuracy of 60% for goal predictions. We implemented a two-fold strategy:
 
+1. Hyperparameter Tuning:
+
+Decision Tree Classifier (DTC), Random Forest Classifier (RFC), SGD Classifier, and xGBoost Classifier underwent rigorous tuning using Grid Search. This systematic exploration of hyperparameter combinations aimed to unlock improved performance and fine-tune each model for optimal results.
+LSTM Models Optimization:
+
+2. Various LSTM model architectures were explored, incorporating adjustments to dropout rates and learning rates. The goal was to identify the most effective configuration for the LSTM models, optimizing their performance for accurate goal predictions.
 ## Getting Started
+
+### Installation
 
 Follow these steps to set up and run the project locally:
 
-### 1. Clone the Repository
+#### 1. Clone the Repository
 
 To get a copy of this project on your local machine, clone the repository using the following command:
 
 ```bash
 git clone https://github.com/username/repository.git
-
-### 2. Navigate to the Project Directory
-
+```
+#### 2. Navigate to the Project Directory
 cd repository
-3. Install Dependencies
+
+#### 3. Install Dependencies
 pip install -r requirements.txt
 
 ### Prerequisites
 
-List any dependencies or prerequisites that users need to install before using your project.
+Before using this project, make sure you have the following dependencies installed:
+
+Python:
+Python (Version 3.0 or higher)
+
+Jupyter Notebooks
+Required Python Libraries:
+scikit-learn, numpy, pandas, matplotlib, seaborn
+TensorFlow
+XGBoost
+scikit-learn
 
 ### Installation
 
@@ -117,4 +141,3 @@ Provide contact information for users to reach out with questions or feedback.
 
 ---
 
-**Note:** Include badges or additional sections as needed for your specific project, such as a build status badge, demo link, or a roadmap for future development.
