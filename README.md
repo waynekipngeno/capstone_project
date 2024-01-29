@@ -142,19 +142,23 @@ XGBoost
 ### Contributing
 We welcome contributions to improve the project. If you'd like to contribute, please follow these guidelines:
 
-```1.Bug Reports:
+```
+1.Bug Reports:
 
 If you encounter a bug, open an issue describing the problem and steps to reproduce it.
 
 2.Feature Requests:
+
 Suggest new features or enhancements by opening an issue with a detailed description.
 
 3.Code Contributions:
+
 Fork the repository, create a new branch, make your changes, and submit a pull request.
 
 4.Code Style:
 
 Follow the project's coding style and conventions.
+
 ```
 
 ### License
@@ -163,7 +167,8 @@ This project is licensed under the MIT license - see the LICENSE.md file for det
 ### Acknowledgements
 We acknowledge and thank the following libraries, tools, or resources that contributed to the development of this project:
 
-```Python (Version 3.0 or higher):The core programming language used for the project, providing a robust foundation for development.
+```
+Python (Version 3.0 or higher):The core programming language used for the project, providing a robust foundation for development.
 
 Scikit-learn:A powerful machine learning library that facilitated the implementation of various models and algorithms.
 
