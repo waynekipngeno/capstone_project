@@ -1,0 +1,2 @@
+model_checkpoint_path: "avg_stats_ann_model"
+all_model_checkpoint_paths: "avg_stats_ann_model"
