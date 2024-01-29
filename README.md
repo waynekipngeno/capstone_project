@@ -16,14 +16,28 @@
 
 ## Table of Contents
 1. [Introduction](#introduction)
-2. [Features](#features)
-3. [Getting Started](#getting-started)
-    - [Prerequisites](#prerequisites)
-    - [Installation](#installation)
-4. [Usage](#usage)
-5. [Contributing](#contributing)
-6. [License](#license)
-7. [Acknowledgements](#acknowledgements)
+2. [Data Source](#data-source)
+3. [Features](#features)
+4. [Methodology](#methodology)
+   - [EDA](#eda)
+   - [Data Preprocessing](#data-preprocessing)
+     - [Handling Null Values](#handling-null-values)
+     - [Feature Engineering](#feature-engineering)
+     - [Dealing with Multicollinearity](#dealing-with-multicollinearity)
+     - [Normalizing Feature Distributions](#normalizing-feature-distributions)
+     - [Handling Outliers](#handling-outliers)
+   - [Modelling](#modelling)
+     - [Total Goal Count Predictions](#total-goal-count-predictions)
+     - [Fouls](#fouls)
+     - [Match Outcomes](#match-outcomes)
+5. [Getting Started](#getting-started)
+   - [Installation](#installation)
+6. [Usage](#usage)
+7. [Contributing](#contributing)
+8. [License](#license)
+9. [Acknowledgements](#acknowledgements)
+10. [Contact](#contact)
+
 
 ## Introduction
 
@@ -128,7 +142,7 @@ XGBoost
 ### Contributing
 We welcome contributions to improve the project. If you'd like to contribute, please follow these guidelines:
 
-1.Bug Reports:
+```1.Bug Reports:
 
 If you encounter a bug, open an issue describing the problem and steps to reproduce it.
 
@@ -141,6 +155,7 @@ Fork the repository, create a new branch, make your changes, and submit a pull r
 4.Code Style:
 
 Follow the project's coding style and conventions.
+```
 
 ### License
 This project is licensed under the MIT license - see the LICENSE.md file for details.
@@ -148,14 +163,22 @@ This project is licensed under the MIT license - see the LICENSE.md file for det
 ### Acknowledgements
 We acknowledge and thank the following libraries, tools, or resources that contributed to the development of this project:
 
-Python (Version 3.0 or higher):The core programming language used for the project, providing a robust foundation for development.
+```Python (Version 3.0 or higher):The core programming language used for the project, providing a robust foundation for development.
+
 Scikit-learn:A powerful machine learning library that facilitated the implementation of various models and algorithms.
+
 Numpy:Essential for numerical computing and array operations, Numpy played a crucial role in data manipulation and analysis.
+
 Pandas:A versatile data manipulation library that simplified handling and processing of structured data.
+
 Matplotlib:A comprehensive plotting library that enabled the creation of visualizations for data exploration and analysis.
+
 Seaborn:Built on top of Matplotlib, Seaborn enhanced the aesthetics of visualizations, making them more informative and appealing.
+
 TensorFlow:An open-source machine learning framework that supported the implementation of deep learning models and neural networks.
+
 XGBoost: An efficient and scalable gradient boosting library that contributed to the development of robust predictive models.
+```
 
 ### Contact
 For questions, feedback, or additional information, feel free to reach out:
