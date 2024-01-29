@@ -1,10 +1,15 @@
 # NABII DIMBA FOOTBALL PREDICTIONS PROJECT.
-# AUTHORS
+## AUTHORS
 1.Wayne Korir
+
 2.Rose Kyalo
+
 3.Dennis Kobia
+
 4.Jane Mwangi
+
 5.Brytone Omare
+
 6.Ivy Ndunge
 
 
@@ -35,21 +40,29 @@ Utilizing the Recursive Feature Elimination (RFE) technique, we systematically i
 ## Methodology
 ### EDA
 
+
 ### Data Preprocessing
-During the data extraction process, we observed that null values were originally encoded as -1. To ensure consistency, we standardized the encoding by replacing null values with zeros, and subsequently, all instances with missing data were dropped. Additionally, incomplete seasons and matches that were suspended were excluded from the dataset.
 
-Recognizing the need for data on matches that had not yet taken place, we implemented feature engineering by calculating the average of the last fifteen matches, ensuring a more comprehensive and predictive dataset.
+#### Handling Null Values
+During the data extraction process, null values were initially encoded as -1. To ensure consistency, the encoding was standardized by replacing null values with zeros. Subsequently, instances with missing data were dropped. Incomplete seasons and suspended matches were also excluded from the dataset.
 
-Multicollinearity among our features was identified, prompting the application of the Recursive Feature Elimination (RFE) technique and penalization methods to reduce dependencies and enhance the model's accuracy.
+#### Feature Engineering
+To address the need for data on upcoming matches, feature engineering was implemented by calculating the average of the last fifteen matches, ensuring a more comprehensive and predictive dataset.
 
-Addressing the non-normal distribution of most features, we employed scaling techniques, including Min-Max scaling and Standard Scaler, to normalize the distributions and improve model performance.
+#### Dealing with Multicollinearity
+Identifying multicollinearity among features prompted the application of the Recursive Feature Elimination (RFE) technique and penalization methods to reduce dependencies and enhance model accuracy.
 
-Furthermore, the presence of outliers was noted, and given the absence of a strong linear relationship between features and the target variable, log transformation was introduced as a strategy to handle outliers and enhance overall model effectiveness.
+#### Normalizing Feature Distributions
+To tackle the non-normal distribution of most features, scaling techniques, including Min-Max scaling and Standard Scaler, were employed to normalize distributions and improve model performance.
+
+#### Handling Outliers
+The presence of outliers was addressed by applying log transformation, considering the absence of a strong linear relationship between features and the target variable.
 
 ### Modelling
 #### Total Goal Count Predictions
 
 For predicting total goal count, we utilized regression models. Various models were considered, and after rigorous evaluation, the Support Vector Regressor (SVR) emerged as the most effective, achieving a Mean Absolute Error (MAE) of 0.3864. To enhance the performance of the SVR model, hyperparameter tuning was conducted, ensuring optimal parameter settings for improved predictive accuracy.
+
 ![Alt Text](/capstone_project/images/totalgoalcount/models)
 
 #### Fouls
