@@ -38,6 +38,7 @@ Utilizing the Recursive Feature Elimination (RFE) technique, we systematically i
 ![Alt Text](/capstone_project/images/totalgoalcount/RFE)
 
 ## Methodology
+
 ### EDA
 
 
