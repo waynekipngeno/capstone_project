@@ -1,6 +1,6 @@
 # NABII - DIMBA FOOTBALL PREDICTIONS PROJECT.
 
-### AUTHORS
+## AUTHORS
 1.Wayne Korir
 
 2.Rose Kyalo
@@ -39,6 +39,7 @@ Utilizing the Recursive Feature Elimination (RFE) technique, we systematically i
 ![Alt Text](/capstone_project/images/totalgoalcount/RFE)
 
 ## Methodology
+The methodology employed in this project encompasses Exploratory Data Analysis (EDA), Data Preprocessing, and Modelling phases to develop a soccer match outcome prediction system for the English Premier League. Here's a brief description of each phase:
 
 ### EDA
 In 46% of the matches, the home team emerged victorious, while the away team secured victory in 30%, and approximately 24% resulted in draws. Notably, during the 2020/2021 and 2021/2022 seasons, there was a noticeable decline in the home team's winning rate, coinciding with the global pandemic.
@@ -64,6 +65,13 @@ To tackle the non-normal distribution of most features, scaling techniques, incl
 The presence of outliers was addressed by applying log transformation, considering the absence of a strong linear relationship between features and the target variable.
 
 ### Modelling
+
+In the modeling phase, various machine learning algorithms were employed to predict key outcomes in soccer matches. The project focused on three main predictions: total goal count, fouls, and match outcomes. Regression models, such as Support Vector Regressor (SVR) and XGBoost Regressor, were utilized for total goal count predictions. For fouls, the Support Vector Machine (SVM) and Artificial Neural Network (ANN) demonstrated promising results. Additionally, classification models, including Decision Tree Classifier and Random Forest Classifier, were explored for match outcome predictions.
+
+Model selection was based on rigorous evaluation metrics, such as Mean Absolute Error (MAE),Root Mean Squared Error (RMSE), Accuracy and F1 Score to ensure optimal performance. The chosen models underwent further optimization through hyperparameter tuning and fine-tuning of model architectures. The iterative process aimed to enhance predictive accuracy and produce reliable insights for soccer enthusiasts engaging in match outcome predictions.
+
+Visualizations of model performances, such as learning curves and hyperparameter tuning results, were instrumental in assessing and improving the models. The overall goal was to deploy models that could provide valuable insights, assist in making informed betting decisions, and contribute to the user-friendly soccer match outcome prediction system.
+
 #### Total Goal Count Predictions
 
 For predicting total goal count, we utilized regression models. Various models were considered, and after rigorous evaluation, the Support Vector Regressor (SVR) emerged as the most effective, achieving a Mean Absolute Error (MAE) of 0.3864. To enhance the performance of the SVR model, hyperparameter tuning was conducted, ensuring optimal parameter settings for improved predictive accuracy.
