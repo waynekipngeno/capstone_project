@@ -183,10 +183,10 @@ We acknowledge and thank the following libraries, tools, or resources that contr
 ### Contact
 For questions, feedback, or additional information, feel free to reach out:
 
-Rose Kyalo
+Name :
 
-Email: rosekyalo94@gmail.com
+Email: 
 
-Twitter: @rose_kawila
+Twitter: 
 
 
