@@ -1,6 +1,7 @@
-# NABII - DIMBA FOOTBALL PREDICTIONS PROJECT.
+# **NABII - DIMBA FOOTBALL PREDICTION PROJECT.**
+![Alt Text](/images/Nabii-Dimba.jpg)
 
-## AUTHORS
+## **AUTHORS**
 1.Wayne Korir
 
 2.Rose Kyalo
@@ -14,7 +15,7 @@
 6.Ivy Ndunge
 
 
-## Table of Contents
+## **Table of Contents**
 1. [Introduction](#introduction)
 2. [Data Source](#data-source)
 3. [Features](#features)
@@ -39,20 +40,20 @@
 10. [Contact](#contact)
 
 
-## Introduction
+## **Introduction**
 
 In Kenya, the betting industry has grown significantly, especially in soccer betting. Many Kenyan sports fans actively engage in predicting match outcomes, seeking to turn their passion into profitable decisions. This project responds to the need for better-informed betting by developing a user-friendly system for predicting English Premier League match outcomes.
 
 Our goal is to create a straightforward tool where users can input for example a match ID, and the system, using machine learning, will provide a prediction. By leveraging advanced algorithms and historical data, we aim to offer reliable predictions, filling a gap in the Kenyan soccer betting scene. This project introduces cutting-edge data science techniques to make match predictions more accessible and practical for soccer enthusiasts in Kenya.
 
-## Data Source
+## **Data Source**
 Our dataset is a comprehensive collection sourced from the football API, FootyStats, and web scraping of relevant data from a dedicated website. The information encompasses football data for the English Premier League spanning from the 2016 to 2024 seasons. Through a meticulous cleaning process, the data was merged into a unified dataframe, ensuring accuracy and coherence for subsequent modeling and analysis.
 
-## Features
+## **Features**
 Utilizing the Recursive Feature Elimination (RFE) technique, we systematically identified and selected the most crucial features for our analysis. This method enhances the model's performance by focusing on the key variables that contribute significantly to the predictive outcomes.Our target variables included total goal count, fouls, and match outcomes.
-![Alt Text](/capstone_project/images/totalgoalcount/RFE)
 
-## Methodology
+
+## **Methodology**
 The methodology employed in this project encompasses Exploratory Data Analysis (EDA), Data Preprocessing, and Modelling phases to develop a soccer match outcome prediction system for the English Premier League. Here's a brief description of each phase:
 
 ### EDA
@@ -60,6 +61,7 @@ In 46% of the matches, the home team emerged victorious, while the away team sec
 
 This decrease in home team success coincided with the absence of fans from matches, emphasizing the potential influence of fan presence on match outcomes. The observed correlation suggests that the dynamic interaction between fans and players may play a significant role in determining the success of the home team. The absence of this factor during the pandemic period might have contributed to the shift in match outcomes.
 
+![Alt Text](/images/eda_into_one.png)
 
 ### Data Preprocessing
 
@@ -78,7 +80,7 @@ To tackle the non-normal distribution of most features, scaling techniques, incl
 #### Handling Outliers
 The presence of outliers was addressed by applying log transformation, considering the absence of a strong linear relationship between features and the target variable.
 
-### Modelling
+### **Modelling**
 
 In the modeling phase, various machine learning algorithms were employed to predict key outcomes in soccer matches. The project focused on three main predictions: total goal count, fouls, and match outcomes. Regression models, such as Support Vector Regressor (SVR) and XGBoost Regressor, were utilized for total goal count predictions. For fouls, the Support Vector Machine (SVM) and Artificial Neural Network (ANN) demonstrated promising results. Additionally, classification models, including Decision Tree Classifier and Random Forest Classifier, were explored for match outcome predictions.
 
@@ -90,21 +92,25 @@ Visualizations of model performances, such as learning curves and hyperparameter
 
 For predicting total goal count, we utilized regression models. Various models were considered, and after rigorous evaluation, the Support Vector Regressor (SVR) emerged as the most effective, achieving a Mean Absolute Error (MAE) of 0.3864. To enhance the performance of the SVR model, hyperparameter tuning was conducted, ensuring optimal parameter settings for improved predictive accuracy.
 
-![Alt Text](/capstone_project/images/totalgoalcount/models)
+![Alt Text](/images/totalgoalcount_best_model.jpg)
 
 #### Fouls
 The Support Vector Machine (SVM) achieved a Root Mean Squared Error (RMSE) of 1.97, while the Artificial Neural Network (ANN) exhibited an RMSE of 1.95. These promising results suggest the potential effectiveness of both models, but additional tuning could enhance their predictive accuracy even further.
 
+![Alt Text](/images/fouls_best_model.jpg)
+
 #### Match Outcomes
 The base models using Stochastic Gradient Descent (SGD) and Long Short-Term Memory (LSTM) demonstrated significant promise, achieving a commendable accuracy of 60% for goal predictions. We implemented a two-fold strategy:
 
-1. Hyperparameter Tuning:
-
-Decision Tree Classifier (DTC), Random Forest Classifier (RFC), SGD Classifier, and xGBoost Classifier underwent rigorous tuning using Grid Search. This systematic exploration of hyperparameter combinations aimed to unlock improved performance and fine-tune each model for optimal results.
+1. Hyperparameter Tuning:Decision Tree Classifier (DTC), Random Forest Classifier (RFC), SGD Classifier, and xGBoost Classifier underwent rigorous tuning using Grid Search. This systematic exploration of hyperparameter combinations aimed to unlock improved performance and fine-tune each model for optimal results.
 LSTM Models Optimization:
 
 2. Various LSTM model architectures were explored, incorporating adjustments to dropout rates and learning rates. The goal was to identify the most effective configuration for the LSTM models, optimizing their performance for accurate goal predictions.
-## Getting Started
+
+
+![Alt Text](/images/matchoutcome_best_model.jpg)
+
+## **Getting Started**
 
 ### Installation
 
@@ -126,11 +132,12 @@ cd repository
 ```bash
 pip install -r requirements.txt
 ```
-### Prerequisites
+### **Prerequisites**
 
 Before using this project, make sure you have the following dependencies installed:
 
-``` Python (Version 3.0 or higher)
+```
+Python (Version 3.0 or higher)
 Scikit-learn
 Numpy
 Pandas
@@ -138,58 +145,48 @@ Matplotlib
 Seaborn
 TensorFlow
 XGBoost
+
 ```
-### Contributing
+### **Contributing**
 We welcome contributions to improve the project. If you'd like to contribute, please follow these guidelines:
 
-```
-1.Bug Reports:
+**1. Bug Reports:** If you encounter a bug, open an issue describing the problem and steps to reproduce it.
 
-If you encounter a bug, open an issue describing the problem and steps to reproduce it.
+**2. Feature Requests:** Suggest new features or enhancements by opening an issue with a detailed description.
 
-2.Feature Requests:
+**3.Code Contributions:** Fork the repository, create a new branch, make your changes, and submit a pull request.
 
-Suggest new features or enhancements by opening an issue with a detailed description.
+**4.Code Style:** Follow the project's coding style and conventions.
 
-3.Code Contributions:
-
-Fork the repository, create a new branch, make your changes, and submit a pull request.
-
-4.Code Style:
-
-Follow the project's coding style and conventions.
-
-```
-
-### License
+### **License**
 This project is licensed under the MIT license - see the LICENSE.md file for details.
 
-### Acknowledgements
+### **Acknowledgements**
 We acknowledge and thank the following libraries, tools, or resources that contributed to the development of this project:
 
-```
-Python (Version 3.0 or higher):The core programming language used for the project, providing a robust foundation for development.
+**1. Python (Version 3.0 or higher):** The core programming language used for the project, providing a robust foundation for development.
 
-Scikit-learn:A powerful machine learning library that facilitated the implementation of various models and algorithms.
+**2. Scikit-learn:** A powerful machine learning library that facilitated the implementation of various models and algorithms.
 
-Numpy:Essential for numerical computing and array operations, Numpy played a crucial role in data manipulation and analysis.
+**3. Numpy:** Essential for numerical computing and array operations, Numpy played a crucial role in data manipulation and analysis.
 
-Pandas:A versatile data manipulation library that simplified handling and processing of structured data.
+**4. Pandas:** A versatile data manipulation library that simplified handling and processing of structured data.
 
-Matplotlib:A comprehensive plotting library that enabled the creation of visualizations for data exploration and analysis.
+**5. Matplotlib:** A comprehensive plotting library that enabled the creation of visualizations for data exploration and analysis.
 
-Seaborn:Built on top of Matplotlib, Seaborn enhanced the aesthetics of visualizations, making them more informative and appealing.
+**6. Seaborn:** Built on top of Matplotlib, Seaborn enhanced the aesthetics of visualizations, making them more informative and appealing.
 
-TensorFlow:An open-source machine learning framework that supported the implementation of deep learning models and neural networks.
+**7. TensorFlow:** An open-source machine learning framework that supported the implementation of deep learning models and neural networks.
 
-XGBoost: An efficient and scalable gradient boosting library that contributed to the development of robust predictive models.
-```
+**8. XGBoost:** An efficient and scalable gradient boosting library that contributed to the development of robust predictive models.
 
 ### Contact
 For questions, feedback, or additional information, feel free to reach out:
 
-[Your Name]
-Email: [your.email@example.com]
-Twitter: [@your_twitter_handle]
+Rose Kyalo
+
+Email: rosekyalo94@gmail.com
+
+Twitter: @rose_kawila
 
 
